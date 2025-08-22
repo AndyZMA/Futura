@@ -5,7 +5,7 @@
 		<!-- For IE -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<!-- For Resposive Device -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 		<!-- For Window Tab Color -->
 		<!-- Chrome, Firefox OS and Opera -->
 		<meta name="theme-color" content="#061948">
@@ -20,6 +20,10 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<!-- responsive style sheet -->
 		<link rel="stylesheet" type="text/css" href="css/responsive.css">
+		<link rel="stylesheet" href="css/bannerMob.css">
+
+
+
 
 		<!-- Fix Internet Explorer ______________________________________-->
 		<!--[if lt IE 9]>
@@ -104,7 +108,7 @@
 									        	<li><a href="service-details.html">Service Details</a></li>
 									       </ul> -->
 									    </li>
-									    <li><a href="blog.html" style="color: black;">Blog</a>
+									    <li><a href="blog.html" style="color: black;">Blog del derechohaiente</a>
 									    	<!-- <ul class="dropdown">
 									        	<li><a href="project.html">project</a></li>
 									        	<li><a href="project-details.html">Project details</a></li>
@@ -164,35 +168,62 @@
 				Theme Main Banner
 			============================================== 
 			-->
-			<div id="theme-main-banner" class="banner-one">
-				<div data-src="images/home/slide-5.jpg">
-					<div class="camera_caption">
-						<div class="container">
-							<!-- <p class="wow fadeInUp animated">The government they survive artical of fortune</p> -->
-							<h1 class="wow fadeInUp animated" data-wow-delay="0.2s">Tu aliada <br> en cada paso </h1>
-							<!-- <a href="about.html" class="theme-button-one wow fadeInUp animated" data-wow-delay="0.39s">ABOUT US</a> -->
-						</div> <!-- /.container -->
-					</div> <!-- /.camera_caption -->
-				</div>
-				<div data-src="images/home/slide-3.jpg">
-					<div class="camera_caption">
-						<div class="container">
-							<!-- <p class="wow fadeInUp animated">The government they survive artical of fortune</p> -->
-							<h1 class="wow fadeInUp animated" data-wow-delay="0.2s">Tu agencia de confianza  <br> hasta tu retiro</h1>
-							<!-- <a href="about.html" class="theme-button-one wow fadeInUp animated" data-wow-delay="0.39s">ABOUT US</a> -->
-						</div> <!-- /.container -->
-					</div> <!-- /.camera_caption -->
-				</div>
-				<div data-src="images/home/slide-1.jpg">
-					<div class="camera_caption">
-						<div class="container">
-							<!-- <p class="wow fadeInUp animated">The government they survive artical of fortune</p> -->
-							<h1 class="wow fadeInUp animated" data-wow-delay="0.2s">Facilitamos tus trámites,  <br> cuidamos tu tiempo</h1>
-							<!-- <a href="about.html" class="theme-button-one wow fadeInUp animated" data-wow-delay="0.39s">ABOUT US</a> -->
-						</div> <!-- /.container -->
-					</div> <!-- /.camera_caption -->
-				</div>
-			</div> <!-- /#theme-main-banner -->
+			
+
+
+</head>
+<body>
+
+  <!-- ========= DESKTOP (mantén el id original que usa tu tema) ========= -->
+  <!-- HERO NUEVO (DESKTOP + MOBILE) -->
+<section class="gf-hero" aria-label="Banner principal">
+  <div class="gf-hero__viewport" data-autoplay="true" data-interval="6000">
+    <!-- SLIDE 1 -->
+    <figure class="gf-hero__slide is-active">
+      <picture>
+        <!-- Desktop -->
+        <source media="(min-width: 769px)" srcset="images/home/slide-5.jpg">
+        <!-- Mobile -->
+        <img src="images/home/mobile-slide1.jpg" alt="Tu aliada en cada paso" loading="eager" decoding="sync" fetchpriority="high">
+      </picture>
+      <figcaption class="gf-hero__caption">
+        <h1>Tu aliada <br> en cada paso</h1>
+      </figcaption>
+    </figure>
+
+    <!-- SLIDE 2 -->
+    <figure class="gf-hero__slide">
+      <picture>
+        <source media="(min-width: 769px)" srcset="images/home/slide-3.jpg">
+        <img src="images/home/mobile-slide-3.jpg" alt="Tu agencia de confianza hasta tu retiro" loading="lazy" decoding="async">
+      </picture>
+      <figcaption class="gf-hero__caption">
+        <h1>Tu agencia de confianza <br> hasta tu retiro</h1>
+      </figcaption>
+    </figure>
+
+    <!-- SLIDE 3 -->
+    <figure class="gf-hero__slide">
+      <picture>
+        <source media="(min-width: 769px)" srcset="images/home/slide-1.jpg">
+        <img src="images/home/mobile-slide-2.jpg" alt="Facilitamos tus trámites, cuidamos tu tiempo" loading="lazy" decoding="async">
+      </picture>
+      <figcaption class="gf-hero__caption">
+        <h1>Facilitamos tus trámites, <br> cuidamos tu tiempo</h1>
+      </figcaption>
+    </figure>
+
+    <!-- Flechas -->
+    <button class="gf-hero__arrow gf-hero__arrow--prev" type="button" aria-label="Anterior">‹</button>
+    <button class="gf-hero__arrow gf-hero__arrow--next" type="button" aria-label="Siguiente">›</button>
+
+    <!-- Dots -->
+    <div class="gf-hero__dots" role="tablist" aria-label="Paginación"></div>
+  </div>
+</section>
+
+
+ <!-- /#theme-main-banner -->
 			
 			
 			<!-- 
@@ -397,7 +428,7 @@
 									<h2>Nuestros valores</h2>
 									<p><b>Visión: </b>Ser reconocidos a nivel nacional como una de las gestoras más destacadas, gracias a la excelencia y calidad de nuestros servicios.</p>
 									<br>
-									<p><b>Misión:</b>Brindar a nuestros clientes un equipo altamente capacitado y profesional, que ofrezca asesoría especializada para el manejo óptimo de los ahorros en su Afore.</p>
+									<p><b>Misión: </b>Brindar a nuestros clientes un equipo altamente capacitado y profesional, que ofrezca asesoría especializada para el manejo óptimo de los ahorros en su Afore.</p>
 									<br>
 									<p><b>Valores y principios: </b>Nos guiamos por la colaboración en equipo, la innovación constante y la pasión por el trabajo, manteniendo siempre un enfoque al cliente y ofreciendo servicios con los más altos estándares de calidad. Actuamos con responsabilidad social, honestidad y ética, respaldados por nuestra experiencia y compromiso con la excelencia. Fomentamos la transparencia en todos nuestros procesos, así como la diversidad, la inclusión y el respeto hacia todas las personas.</p>
 
@@ -405,15 +436,15 @@
 								<ul class="mission-goal clearfix">
 									<li>
 										<i class="icon flaticon-star"></i>
-										<h4>Vision</h4>
+										<h4>Visión</h4>
 									</li>
 									<li>
 										<i class="icon flaticon-medal"></i>
-										<h4>Missions</h4>
+										<h4>Misión</h4>
 									</li>
 									<li>
 										<i class="icon flaticon-target"></i>
-										<h4>Goals</h4>
+										<h4>Valores</h4>
 									</li>
 								</ul> <!-- /.mission-goal -->
 							</div> <!-- /.text -->
@@ -432,7 +463,7 @@
 				<div class="container">
 					<div class="theme-title-one">
 						<h2>¿Por qué elegirnos?</h2>
-						<P>En nuestra empresa, nos especializamos en brindar asesoría confiable y personalizada para gestionar tus trámites de afore de manera sencilla y eficiente. Contamos con un equipo de expertos comprometidos en ayudarte a maximizar tus beneficios y asegurar tu futuro financiero. Elegirnos significa tener la tranquilidad de contar con el respaldo profesional que necesitas para tomar decisiones informadas. ¡Tu bienestar financiero, es nuestra prioridad!</P>
+						<P>En Grupo Futura, nos especializamos en brindar asesoría confiable y personalizada para gestionar tus trámites de afore de manera sencilla y eficiente. Contamos con un equipo de expertos comprometidos en ayudarte a maximizar tus beneficios y asegurar tu futuro financiero. Elegirnos significa tener la tranquilidad de contar con el respaldo profesional que necesitas para tomar decisiones informadas. ¡Tu bienestar financiero, es nuestra prioridad!</P>
 					</div> <!-- /.theme-title-one -->
 
 					<div class="wrapper">
@@ -939,9 +970,16 @@
 		<script src="vendor/jquery.countTo.js"></script>
 		<!-- Fancybox -->
 		<script src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
-
 		<!-- Theme js -->
 		<script src="js/theme.js"></script>
+
+		<script src="js/banners.js"></script>	
+		
+
+
+
+		
+
 		</div> <!-- /.main-page-wrapper -->
 	</body>
 </html>
